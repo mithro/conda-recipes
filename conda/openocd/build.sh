@@ -3,6 +3,6 @@
 ./bootstrap
 ./configure --prefix="$PREFIX" \
     --enable-ftdi
-make
+make -j$CPU_COUNT
 make install
 
